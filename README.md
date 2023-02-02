@@ -1,1 +1,2 @@
-## Laboratory Exercise 1
+#### Trends in Application Development Laboratory Exercise
+##### Submitted by: Angeline B. Basbas
