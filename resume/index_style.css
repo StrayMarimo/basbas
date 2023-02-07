@@ -1,0 +1,50 @@
+/* * {
+    font-family: 'Helvetica';
+} */
+
+
+body{
+    margin: 20px;
+    background-color: #eef5fc;
+}
+
+.picture{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 1px solid #4e7a9b;
+    border-width: 2px;
+}
+.glyphicon{
+    margin-right: 10px;
+}
+.sideInfo{
+    width: 20%; 
+    height: 200px; 
+    float: left;
+    
+}
+
+h1, h3{
+    font-family: 'Bebas Neue';
+}
+
+p i{
+    font-style: italic;
+    font-size: 20px;
+}
+
+hr{
+    margin: -20px;
+}
+
+.tech-stack p {
+    border: 1px solid #99b3c5;
+    color: white;
+    background-color: #99b3c5;
+    border-radius: 10px;
+    width: max-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
