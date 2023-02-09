@@ -3,4 +3,4 @@
 
 
 Directories:
-- ../resume/
+- ../resume/html/
