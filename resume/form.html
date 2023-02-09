@@ -2,20 +2,35 @@
 <html>
 <head>
 	<title>Contact Me</title>
-    <link rel="stylesheet" href="index_style.css" type="text/css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="form_style.css" type="text/css">
 </head>
 <body>
-	<a href="index.html">Back</a>
-	<h1>Drop a Message</h1>
-	<form>
-		<input type="text" name="name" placeholder="Enter name"> <br />
-		<input type="email" name="email" placeholder="Enter email"> <br /> <br />
-		Message: <textarea name="message" cols="30" rows="10"></textarea> <br /> <br />
-		<Input type="submit" name="submit" value="Submit">
-		<Input type="submit" name="reset" value="Reset">
-	</form>
-	<a href="https://www.linkedin.com/in/angeline-basbas-069985264/">Linked In</a>
-	<a href="https://www.facebook.com/angelin.basbas">Facebook</a>
-	<a href="https://github.com/StrayMarimo">Github</a>
+	<div class="navbar">
+		<div style="float: left; width: 80%">
+			<a class="glyphicon glyphicon-chevron-left" href="index.html"></a>
+		</div style="float: right; width: 20%">
+		<div>
+			<a href="https://www.linkedin.com/in/angeline-basbas-069985264/"><i class="fa-brands fa-linkedin-in"></i></a>
+			<a href="https://www.facebook.com/angelin.basbas"><i class="fa-brands fa-facebook"></i></a>
+			<a href="https://github.com/StrayMarimo"><i class="fa-brands fa-github"></i></a>
+		</div>
+	</div>
+	<h1>Drop a Message</h1> 
+	<h5>Fill out the form and I will get back to you within 24 hours.</h5> <br />
+	<div class="form">
+		<form>
+			<input type="text" name="name" placeholder="Enter name..."> <br /> <br />
+			<input type="email" name="email" placeholder="Enter email..."> <br /> <br />
+			<textarea name="message" cols="30" rows="10" placeholder="Message..."></textarea> <br /> <br />
+			<Input type="submit" name="submit" value="Submit">
+			<Input type="reset" name="reset" value="Reset">
+		</form>
+	</div>
+	
 </body>
 </html>
