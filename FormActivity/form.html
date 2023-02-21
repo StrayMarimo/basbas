@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Activity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script language="javascript" type="text/javascript">
+      function validateForm() {
+        var birthYear = Number(
+          document.forms["myForm"]["bday"].value.substring(0, 4)
+        );
+        var password = document.forms["myForm"]["password"].value;
+        let flag = true;
+        var age = Number(new Date().getFullYear()) - birthYear;
+
+        if (password.length < 8) {
+          document.getElementById("pass_message").innerHTML =
+            "Password must be at least 8 characters.";
+          flag = false;
+        } else document.getElementById("pass_message").innerHTML = "";
+
+        if (age <= 21) {
+          document.getElementById("age_message").innerHTML =
+            "Minors are not allowed!";
+          flag = false;
+        } else document.getElementById("age_message").innerHTML = "";
+
+        if (flag) {
+          document.getElementById("message").innerHTML =
+            "Hooray! your account has been successfully created!";
+        } else document.getElementById("message").innerHTML = "";
+      }
+    </script>
+  </head>
+  <body>
+    <div style="display: flex; justify-content: center">
+      <form id="myForm">
+        <h1>Registration Form</h1>
+        <p id="message"></p>
+        First Name: <br />
+        <input type="text" class="full" name="firstname" /> <br />
+        Last Name: <br />
+        <input type="text" class="full" name="lastname" /> <br />
+        Nick Name: <br />
+        <input type="text" class="full" name="nickname" /> <br />
+        Email:<br />
+        <input type="email" class="full" name="email" /> <br />
+        Password: <br />
+        <input type="password" class="full" name="password" id="pass" /> <br />
+        <p id="pass_message"></p>
+        Date of Birth: <br />
+        <input type="date" class="full" name="bday" id="bday" /> <br />
+        <p id="age_message"></p>
+        Gender:<br />
+        <input type="radio" name="male" value="male" /> Male
+        <input type="radio" name="female" value="female" /> Female
+        <input type="radio" name="other" value="other" /> Other <br />
+        Mobile: <br />
+        <input type="number" class="full" name="mobile" /> <br />
+        Address: <br />
+        <textarea name="address" id="" cols="30" rows="10"></textarea> <br />
+        <input
+          type="button"
+          name="submit"
+          value="Submit"
+          id="submit"
+          onclick="validateForm()"
+        />
+        <input type="submit" name="reset" value="Reset" id="reset" />
+      </form>
+    </div>
+  </body>
+</html>
