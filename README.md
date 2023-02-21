@@ -4,3 +4,5 @@
 
 Directories:
 - ../resume/html/
+- ..FormActivity/
+- ../HoneyLight/
